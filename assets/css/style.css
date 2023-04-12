@@ -60,11 +60,13 @@ button:hover {
    background-color: var(--color-04);
 }
 .b-explore-now {
-   background-color: var(--color-04);
+   /* background-color: var(--color-04); */
+   background: linear-gradient(90deg, var(--color-04), var(--color-01));
    color: white;
 }
 .b-explore-now:hover {
-   background-color: var(--color-01);
+   background: transparent;
+   border: 1px solid var(--color-01);
 }
 .b-learn-more {
    background-color: transparent;
@@ -117,7 +119,7 @@ header nav ul li:hover, header nav ul li a:hover {
 }
 
 .hero {
-   margin-top: 40px;
+   margin-top: 50px;
    width: 100%;
    height: auto;
    display: flex;
