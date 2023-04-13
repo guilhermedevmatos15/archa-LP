@@ -80,7 +80,42 @@ button:hover {
    background-color: var(--color-03);
 }
 
-
+/* sections */
+.section-default {
+   margin: 160px auto 0 auto;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+.section-default > div {
+   width: 50%;
+   height: 100%;
+}
+.section-default .content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 20px;
+}
+.section-default .content h2 {
+   max-width: 350px;
+   font-size: 2.5rem;
+   line-height: 2.7rem;
+}
+.section-default .content > p {
+   max-width: 550px;
+}
+.section-default .image img {
+   width: 350px;
+}
+.section-default .image {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 
 
 
@@ -126,19 +161,20 @@ header nav ul li:hover, header nav ul li a:hover {
    display: flex;
    justify-content: center;
    align-items: center;
-   /* gap: 20px; */
+   text-align: right;
+   /* gap: 50px; */
 }
 .hero > div {
    width: 50%;
    height: 100%;
 }
 .hero .content {
-   padding: 30px 0px 30px 200px;
+   padding: 30px 50px 30px 0px;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: flex-start;
-   gap: 20px;
+   align-items: flex-end;
+   gap: 15px;
 }
 .hero .content h1 {
    max-width: 460px;
@@ -146,7 +182,7 @@ header nav ul li:hover, header nav ul li a:hover {
    line-height: 3.7rem;
 }
 .hero .content p {
-   max-width: 500px;
+   max-width: 580px;
 }
 .hero .content .buttons {
    margin-top: 5px;
@@ -186,10 +222,10 @@ header nav ul li:hover, header nav ul li a:hover {
    padding-right: 5px;
 }
 .hero .image {
-   /* padding-left: 50px; */
+   padding-left: 150px;
    /* height: 400px; */
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
 }
 .hero .image img {
@@ -198,7 +234,7 @@ header nav ul li:hover, header nav ul li a:hover {
 
 
 .discover {
-   margin: 170px auto 0 auto;
+   margin: 150px auto 0 auto;
    width: 100%;
    height: auto;
    display: flex;
@@ -258,43 +294,6 @@ header nav ul li:hover, header nav ul li a:hover {
    color: var(--color-04);
    font-size: 1.1rem;
 }
-
-
-.section-default {
-   margin: 160px auto 0 auto;
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.section-default > div {
-   width: 50%;
-   height: 100%;
-}
-.section-default .content {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: flex-start;
-   gap: 20px;
-}
-.section-default .content h2 {
-   max-width: 350px;
-   font-size: 2.5rem;
-   line-height: 2.7rem;
-}
-.section-default .content > p {
-   max-width: 550px;
-}
-.section-default .image img {
-   width: 350px;
-}
-.section-default .image {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
 
 
 .commitment .abouts {
@@ -364,6 +363,49 @@ header nav ul li:hover, header nav ul li a:hover {
 }
 
 
+.building .content {
+   align-items: flex-end;
+   text-align: right;
+}
+.building .content h2 {
+   max-width: none;
+}
+.building .conteiner-card {
+   margin-top: 20px;
+   padding: 0 20px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 30px;
+}
+.building .conteiner-card .card {
+   width: 150px;
+   background-color: rgb(32, 31, 31);
+   border-radius: 20px;
+   padding: 20px;
+   transition: all .4s;
+}
+.building .conteiner-card .card:hover {
+   transform: scale(105%);
+   transition: all .4s;
+   background-color: var(--color-03);
+}
+.building .conteiner-card .card i {
+   cursor: default;
+   color: var(--color-01);
+   font-size: 1.2rem;
+}
+.building .conteiner-card .card:hover i {
+   color: var(--color-05);
+   transition: all .4s;
+}
+.building .conteiner-card .card p {
+   margin-top: 2px;
+   display: block;
+   cursor: default;
+}
 
 
 /* temp */
