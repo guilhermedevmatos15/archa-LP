@@ -21,18 +21,17 @@ const clickResultClose = (elementsClick, elementClose, classCss) => {
    const $elementClose = elementClose;
    const $classCss = classCss;
 
-   $elementsClick.forEach(element => {
+   $elementsClick.forEach((element) => {
       element.addEventListener('click', () => {
          $elementClose.classList.remove($classCss);
       });
-   })
-}
+   });
+};
 
-const uptadeElementYear = (elements) => Array.from(elements).forEach((element) => {
+const uptadeElementYear = (elements) =>
+   Array.from(elements).forEach((element) => {
       element.innerHTML = new Date().getFullYear();
    });
-
-
 
 addActiveAndClose(
    document.querySelector('.menu'),
