@@ -491,3 +491,27 @@ footer a {
       padding-right: 200px;
    }
 }
+
+
+@media (max-width: 1250px) {
+   .hero .image {
+      display: none;
+   }
+   .hero .content {
+      width: 90%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      /* padding: 0; */
+      padding: 30px 30px 30px 30px;
+   }
+   .section-default .image {
+      display: none;
+   }
+   .section-default .content {
+      width: 90%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+   }
+}
