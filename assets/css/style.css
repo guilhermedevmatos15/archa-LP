@@ -32,6 +32,12 @@ strong {
    color: var(--color-03);
 }
 
+
+/* temp */
+img {
+   width: 100px;
+}
+
 /* buttons */
 button {
    width: auto;
@@ -464,12 +470,24 @@ footer img {
    width: 150px;
 }
 footer a {
-   color: var(--color-04);
-   
-} 
+   color: var(--color-04);  
+}
 
 
-/* temp */
-img {
-   width: 100px;
+
+
+
+
+
+
+
+@media (min-width: 1500px) {
+   .building .image {
+      justify-content: flex-start;
+      padding-left: 50px;
+   }
+   .commitment .image {
+      justify-content: flex-end;
+      padding-right: 200px;
+   }
 }
