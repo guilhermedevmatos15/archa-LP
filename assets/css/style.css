@@ -158,6 +158,9 @@ header nav ul li:hover, header nav ul li a:hover {
    transition: all .3s;
    color: var(--color-04);
 }
+header i.fa-bars {
+   display: none;
+}
 
 .hero {
    /* margin-top: 50px; */
@@ -542,5 +545,78 @@ footer a {
       justify-content: center;
       align-items: center;
       gap: 5px;
+   }
+}
+
+
+
+
+
+/* header responsive */
+.menu {
+   display: none;
+}
+.menu.active {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   min-height: 100vh;
+   padding: 20px;
+   background-color: #0b0b0bfc;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+.menu nav, .menu ul{
+   list-style: none;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+.menu nav li, .menu nav a {
+   color: white;
+   font-size: 1.2rem;
+   text-decoration: none;
+   cursor: pointer;
+   transition: all .4s;
+}
+.menu nav li:hover, .menu nav a:hover {
+   color: var(--color-03);
+   cursor: pointer;
+   transition: all .4s;
+}
+.menu i.fa-xmark {
+   position: absolute;
+   top: 50px;
+   right: 50px;
+   font-size: 1.5rem;
+   cursor: pointer;
+   transition: all .4s;
+}
+.menu i.fa-xmark:hover {
+   color: rgb(255, 90, 90);
+   cursor: pointer;
+   transition: all .4s;
+}
+
+@media (max-width: 915px) {
+   header nav, header button{
+      display: none;
+   }
+   header i.fa-bars {
+      display: inline;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: all .4s;
+   }
+   header i.fa-bars:hover {
+      color: var(--color-03);
+      cursor: pointer;
+      transition: all .4s;
    }
 }
