@@ -243,6 +243,7 @@ header nav ul li:hover, header nav ul li a:hover {
    margin: 150px auto 0 auto;
    width: 100%;
    height: auto;
+   padding: 0 50px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -510,8 +511,36 @@ footer a {
    }
    .section-default .content {
       width: 90%;
+      padding: 0 30px 0 30px;
       text-align: center;
       justify-content: center;
       align-items: center;
+   }
+}
+
+@media (max-width: 650px) {
+   .commitment .abouts {
+      width: 90%;
+   }
+   .commitment .about {
+      width: 100%;
+   }
+}
+
+@media (max-width: 475px) {
+   .building .conteiner-card {
+      gap: 5px;
+   }
+   .discover .conteiner-group-card .conteiner-cards {
+      gap: 5px;
+   }
+   .hero .content > div:not(.buttons) {
+      flex-direction: column;
+   }
+   .hero .content .buttons {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
    }
 }
