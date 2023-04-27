@@ -542,12 +542,11 @@ footer a {
 
 /* header responsive */
 .menu {
-   opacity: 0%;
-   display: none;
-   transition: all .4s;
+   position: fixed;
+   top: -100vh;
+   transition: all 0.4s;
 }
 .menu.active {
-   opacity: 100%;
    position: fixed;
    top: 0;
    width: 100%;
@@ -559,7 +558,7 @@ footer a {
    justify-content: center;
    align-items: center;
    gap: 20px;
-   transition: all .4s;
+   transition: all 0.4s;
 }
 .menu nav,
 .menu ul {
